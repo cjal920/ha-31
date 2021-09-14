@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>HA-31</title>
+
+  <!-- <link href="https://fonts.googleapis.com/css?family=Cookie|Dancing+Script|Graduate|Great+Vibes|Kaushan+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="icon" href="img/" type="image/gif" sizes="16x16">
+
+  <!-- <link href="css/index.css" rel="stylesheet"> -->
+  <link href="css/style.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap-5.1.0-dist/" rel="stylesheet"> -->
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+ 
+
+          <img src="img/HAThirtyOne_logo_notagline.jpg" alt="HA-31" class="logo-header">
+
+
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+
+
+          <img src="img/HA-logo.png" alt="HA-31" class="logo-ha">
+
+        </div>
+        <!-- <div class="col-2"></div> -->
+        <div class="col-6">
+
+
+          <img src="img/31-logo.png" alt="HA-31" class="logo-31">
+        </div>
+
+
+        </div>
+
+
+        </div>
+
+<style>
+#container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: yellow;
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+}
+</style>
+<body>
+
+<p><button onclick="myMove()">Click Me</button></p> 
+
+<div id ="container">
+  <div id ="animate"></div>
+</div>
+
+<script>
+function myMove() {
+  let id = null;
+  const elem = document.getElementById("animate");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + "px"; 
+      elem.style.left = pos + "px"; 
+    }
+  }
+}
+</script>
+
+
+
+
+
+
+</body>
+
+</html>
