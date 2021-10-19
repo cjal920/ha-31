@@ -1,4 +1,4 @@
-.ha31-circle {
+/* .ha31-circle {
     height: 100px;
     width: 100px;
     background-color: #ffffff;
@@ -14,7 +14,7 @@
     border-radius: 50%;
     border: 10px solid #000000;
     display: inline-block;
-  }
+  } */
 
 
   /* body {
@@ -24,7 +24,7 @@
   } */
   
   
-  
+/*   
   svg,
   .logo {
     position: absolute;
@@ -41,7 +41,7 @@
     opacity: 0;
     animation: fadeIn 0.75s linear forwards;
       animation-delay: 1s;
-      /* src: url(/assets/img/HA-logo-trans.png); */
+
   }
   
   .circle {
@@ -71,7 +71,6 @@
   }
   
 
-  /* */
 
   .fade-in {
     animation: fadeIn ease 5s;
@@ -129,10 +128,9 @@
 
   .ha-logo  {
     margin: 0 auto;
-    /* text-align: center; */
     max-width: 50%;
     height: auto;
-  }
+  } */
 
 
   /* @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300); */
@@ -141,7 +139,7 @@
   font-family: "Roboto", sans-serif;
   background:#d7bd94;
 } */
-
+/* 
 .circle-wrap {
   margin: 50px auto;
   width: 150px;
@@ -209,3 +207,9 @@
   -o-animation: fadeIn ease 5s;
   -ms-animation: fadeIn ease 5s;
 }
+
+#container {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+} */

@@ -41,39 +41,111 @@
       </nav>
 
 
- 
 
-          <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-            <h4 id="scrollspyHeading1">First heading</h4>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-            <br><br><br><br><br>
+      <h4 id="scrollspyHeading1">First heading</h4>
 
-            <section>
-              <div class="circle-wrap">
-                <div class="circle">
-                  <div class="mask full">
-                    <div class="fill"></div>
-                  </div>
-                  <div class="mask half">
-                    <div class="fill"></div>
-                  </div>
-                  
-                  <div class="inside-circle">
+      <br><br><br><br><br>
 
-                    <div class="fade-in">
-                    <img src="assets/img/h•a.png" class="ha img">
-                    <!-- <img src="assets/img/31-trans.png" class="ha"> -->
-                </div>
+      <div class="circular">
+        <div class="inner"></div>
+        <div class="number">100%</div>
+        <div class="circle">
+          <div class="bar left">
+            <div class="progress"></div>
+          </div>
+          <div class="bar right">
+            <div class="progress"></div>
+          </div>
+        </div>
+      </div>
 
-                </div>
-              </div>
-            </div>
-            </section>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+      <style>
 
-            <br><br><br><br><br>
+      *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+      }
+      html, body{
+        display:grid;
+        height:100%;
+        text-align: center;
+        place-items: center;
+        background: #dde6f0;
+      }
+      .circular{
+        height:100px;
+        width: 100px;
+        position: relative;
+        transform:scale(2);
+      }
+      .circular .inner{
+        position: absolute;
+        z-index: 6;
+        top: 50%;
+        left: 50%;
+        height: 80px;
+        width: 80px;
+        margin: -40px 0 0 -40px;
+        background: #dde6f0;
+        border-radius: 100%;
+       
+      }
+      .circular .number{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        z-index:10;
+        font-size:18px;
+        font-weight:500;
+        color:#4158d0;
+      }
+      .circular .bar{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #fff;
+        -webkit-border-radius: 100%;
+        clip: rect(0px, 100px, 100px, 50px);
+      }
+      .circle .bar .progress{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        -webkit-border-radius: 100%;
+        clip: rect(0px, 50px, 100px, 0px);
+        background: #4158d0;
+      }
+      .circle .left .progress{
+        z-index:1;
+        animation: left 4s linear both;
+      }
+      @keyframes left{
+        100%{
+          transform: rotate(180deg);
+        }
+      }
+      .circle .right {
+        transform: rotate(180deg);
+        z-index:3;
+       
+      }
+      .circle .right .progress{
+        animation: right 4s linear both;
+        animation-delay:4s;
+      }
+      @keyframes right{
+        100%{
+          transform: rotate(180deg);
+        }
+      }
 
-
+    </style>
 
 
             <p>...</p>
@@ -103,6 +175,3 @@
         </div>
       </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-        <script src="js/circle.js"></script>
-    </body>
